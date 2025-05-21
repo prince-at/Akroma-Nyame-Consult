@@ -1,0 +1,151 @@
+body{
+    /* background-color: rgba(100, 148, 237, 0.329); */
+    background-color: white;
+}
+.services{
+    width: 100%;
+    height: 70vh;
+    background-color:  gray;
+}
+.service-image{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.4;
+}
+.services-title{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    
+}
+.service-title-container{
+    position: relative;
+    width: 90%;
+    height: 50vh;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.service-main-container{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.service-image2{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    opacity: 0.4;
+    
+}
+.services-subtitle{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.stack-image-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 70%;
+}
+.text-on-expertise{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;   
+}
+.stack-image-cont-1{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    height: 25vh;
+    background-color: rgb(209, 209, 209);
+    margin: 40px;
+    display: flex;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: white;
+    cursor: pointer; 
+
+}
+.stack-image-cont-1:hover .travel-doc-image{
+    transform: scale(1.1);
+}
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer; 
+  }
+  .stack-image-cont-1:hover .hover-overlay {
+    opacity: 1;
+  }
+  .hover-text {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+    
+  }
+.service-paragraph-1{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+.travel-doc-image{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 14px;
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+.travel-doc-image::after {
+    content: ""; /* Replace with the text you want to reveal */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    pointer-events: none; /* Prevent interaction with the pseudo-element */
+}
+
+.travel-doc-image:hover::after {
+    opacity: 1; /* Reveal the text on hover */
+}
