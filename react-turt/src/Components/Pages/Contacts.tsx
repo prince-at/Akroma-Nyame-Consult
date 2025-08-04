@@ -19,7 +19,7 @@ const Contacts = (props: Props) => {
         
     </div>
     <div><ContactCompo/> </div>
-    <div><Subscribe/></div>
+  
     </>
   )
 }

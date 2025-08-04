@@ -10,7 +10,7 @@ type Props = {}
 const WorkAbroadBlog = (props: Props) => {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="cover-for-blog">
     <div className="blog-page">
     <img
       src={WorkAbroadPicture}
@@ -64,12 +64,12 @@ const WorkAbroadBlog = (props: Props) => {
     <h1 className="work-abroad-title">Would you like me to tailor this blog post to a specific country, industry (e.g. healthcare, tech), or audience (e.g. students, skilled workers)?</h1>
     <button className="wbtn-get" onClick={()=>navigate('/contact')}>Get in Touch with Us </button>
     <hr/>
-    <h1 className="global-text">Conclusion</h1>
+    
     </div>
    
   </div>
  
-  </>
+  </div>
   )
 }
 

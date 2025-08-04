@@ -1,32 +1,36 @@
-import React from 'react'
-import '../Pages/Vision.css'
-import vietnam from '../../assets/WhatsApp Image 2025-04-24 at 11.08.12 PM.jpeg'
+import React from "react";
+import "../Pages/Vision.css";
+import vietnam from "../../assets/WhatsApp Image 2025-04-24 at 11.08.12 PM.jpeg";
+import { TrendingData } from "../TrendingData";
 
-type Props = {}
+
+type Props = {};
 
 const Vision = (props: Props) => {
   return (
-    <div className='vision-background-1'>
-        <img src={vietnam} alt='Vietnam' className='vietnam-image'/>
-        <div className='mission-statement'>
-            <h1 className='mission-statement-title'> OUR VISION</h1>
-            <p className='mission-statement-paragraph'>
-            To be a trusted travel and tour recruitment agency, connecting<br/>
-            talented professionals with exciting job opportunities worldwide,<br/>
-            while fostering a culture of innovation, excellence, and customer satisfaction.
-            </p>
-            <p className='mission-statement-paragraph'>   
-            <h1 className='mission-statement-title'>GOALS</h1>
-            <strong>"Expand global reach:</strong> Establishing partnerships with international <br/>
-            clients and candidates. <br/><strong>Foster long-term relationships:</strong>
-            Building strong connections with clients and candidates, 
-            ensuring repeat business and referrals.<br/><strong>Stay up-to-date with industry trends: </strong>
-            Continuously monitoring industry developments and adapting services to meet evolving needs.
-
-              </p>  
+    <div className="vision-background-3">
+      <div className="image-for-visit">
+        <h1 className="do-wanna-miss">Destinations You Don’t Wanna Miss</h1>
+      </div>
+      <div className="japan-container">
+        {TrendingData.map((item, index) => {
+          return(
+          <div key={index} className="center-text" >
+            <div className="japan-image-container">
+            <img src={item.photo} alt="japan-photo" className="japan-photo"/>
+            <div className="japan-title">
+            <h2>{item.title}</h2>
+            </div>
+            </div>
+            
+          </div>
+        )})}
+        
+      </div>
+      
+     
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Vision
+export default Vision;

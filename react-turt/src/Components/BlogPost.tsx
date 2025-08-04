@@ -34,7 +34,7 @@ const BlogPost: React.FC<Props> = () => {
         })}
       </div>
     </div>
-     <Subscribe/>
+     
      </>
   );
 };

@@ -5,24 +5,53 @@ body{
 .services{
     width: 100%;
     height: 70vh;
-    background-color:  gray;
+    background-color:  rgb(0, 0, 0);
+    
 }
+
+.empowering{
+    width: 50%;
+    display: flex;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-family: 'Helvetica-Bold';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    animation: slideIn 0.7s ease;
+    line-height: 1.1;
+    text-align: center;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-70%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
 .service-image{
     width: 100%;
     height: 70vh;
     object-fit: cover;
     position: absolute;
     opacity: 0.4;
+   
 }
-.services-title{
+/* .services-title{
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 120%;
+    left: 8%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2.5rem;
-    
-}
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
 .service-title-container{
     position: relative;
     width: 90%;
@@ -35,7 +64,7 @@ body{
 .service-main-container{
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,10 +143,13 @@ body{
     
   }
 .service-paragraph-1{
+    width: 75%;
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 20px;
     text-align: center;
+    padding-top: 20px;
+    font-size: 1.2rem;
     
 }
 
@@ -148,4 +180,14 @@ body{
 
 .travel-doc-image:hover::after {
     opacity: 1; /* Reveal the text on hover */
+}
+.cover-service-container{
+    width: 100%;
+    height: 100%;
+}
+.paragraph-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

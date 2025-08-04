@@ -8,7 +8,7 @@ const CountriesContainer = (props: Props) => {
   return (
     <div className='place-to-work'>
       <h1 className='job-title'>OUR OFFER
-        <hr/>
+
       </h1>
     <div className='container-page'>
      
@@ -34,7 +34,7 @@ const CountriesContainer = (props: Props) => {
     
  
       </div>
-      <hr/>
+     
       </div>
   );
 };

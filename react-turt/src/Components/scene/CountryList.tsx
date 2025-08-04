@@ -1,21 +1,59 @@
+import europe from '../../images/Screenshot 2025-06-27 221040.jpg'
+import australia from '../../images/Sydney_Opera_House_Close_up_HDR_Sydney_Australia.jpg'
+import asia from '../../images/Singapore-header2-1536x937.jpeg'
+import dubai from '../../images/vecteezy_dubai-metro-as-world-s-longest-fully-automated-metro-network_33692423.jpg'
+
+
 export const CountriesList=[
     {
-        image: 'https://cdn.prod.website-files.com/61afd43f710f165caa47f521/61cdbe41a6eb89b0d04a466d_Hlavni-USA-2-min.jpg',
-        name: 'Work in America Countries',
-        title: 'AMERICA ',
-        view: 'View All'
+        image: dubai,
+        name: 'Work in UAE Countries',
+        title: 'Dubia, Kuwait, Oman, Qatar, Bahrain, Saudi Arabia',
+        process: 'Duration: 1-2Months',
+        button1: 'Apply for Work',
+        button: 'Check availability'
 
     },
     {
-        image: 'https://www.flightgift.com/media/wp/FG/2024/07/Skincare-30th-birthday-gifts-for-her-3.webp',
+        image: australia,
         name: 'Work in Australia',
-        title: 'AUSTRALIA',
-        view: 'View All'
+        title: 'Australia. New Zealand, Fiji, Papua New Guinea,  Vanuatu',
+        process: 'Duration: 2 - 3 Months',
+        button1: 'Apply for Work',
+        button: 'Check availability'
     },
     {
+        image: asia,
+        name: 'Work in Asia',
+        title: 'China, Japan, South Korea, Singapore, Malaysia, Thailand, Vietnam',
+        process: 'Duration: 2 - 3 Months',
+        button1: 'Apply for Work',
+        button: 'Check availability' 
+    },
+    {
+        image: europe,
+        name: 'Work in Europe',
+        title: 'Germany, France, UK, Italy, Albania, Portugal, Spain, etc.',
+        process: 'Duration: 2 - 3 Months',
+        button1: 'Apply for Work',
+        button: 'Check availability'
+    },
+    // {
+    //     image: 'https://www.estate-living.co.za/wp-content/uploads/2021/08/sa-uni-1.jpg',
+    //     name: 'Work in Canada',
+    //     title: 'CANADA',
+    //     process: '2 - 3 Months',
+    //     button1: 'Apply for Work',
+    //     button: 'Check Availability'
+    // }
+]
+export const CountriesList2=[
+    {
         image: 'https://www.estate-living.co.za/wp-content/uploads/2021/08/sa-uni-1.jpg',
-        name: 'Study Abroad',
-        title: 'STUDENT',
-        view: 'View All'
+        name: 'Work in Canada',
+        title: 'CANADA',
+        process: '2 - 3 Months',
+        button1: 'Apply for Work',
+        button: 'Check Availability'
     }
 ]

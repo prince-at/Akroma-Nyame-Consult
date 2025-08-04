@@ -1,0 +1,123 @@
+.portfolio-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+.Incoming{
+    font-size: 3rem;
+    font-family: 'helvetica-bold';
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+
+}
+.incomingReviews-container{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.incoming-reviews-only{
+   width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.4s ease;        /* Add this */ /* Add this */
+  gap: 10rem;  
+  flex-direction: column;
+}
+.incoming-review-card{
+    width: 100%;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 249, 252);
+    height: 350px;
+    border-radius: 15px;
+}
+.incoming-review-text{
+    width: 80%;
+    text-align: center;
+    padding-top: 20px;
+  color: #555;
+}
+.incoming-review-name{
+    font-weight: bold;
+    padding-top: 15px;;
+}
+.IncomingPage{
+    width: 100%;
+    height: 980px;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+  
+}
+.incoming-reviews{
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* animation: scroll-left 45s linear infinite; */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+
+ @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+.letter-T{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.incoming-person-review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.yelp-logo{
+   filter: saturate(0);
+}
+.yelp-logo:hover{
+    filter: saturate(1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.social-media-logos{
+    width: 90%;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}

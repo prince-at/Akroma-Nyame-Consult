@@ -1,5 +1,5 @@
 import React from "react"
-import pic from "../assets/5d0e7bdbec56a.jpg"
+import pic from "../../src/images/WhatsApp Image 2025-06-29 at 3.08.04 PM.jpeg"
 type Props = {}
 
 const BelowSlider = (props: Props) => {
@@ -19,8 +19,8 @@ const BelowSlider = (props: Props) => {
         </p>
         <button className="btn-view-details">View Details</button>
         </div>
-        <div> <img src={pic} alt="picture" className="welcome-pic" /></div>
-       
+        <div className="well-picture-container"> <img src={pic} alt="picture" className="welcome-pic" /></div>
+
         </div>
         </>
   )
